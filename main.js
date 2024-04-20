@@ -20,18 +20,16 @@ document.getElementsByClassName("people") ;
 let tipButton = 
 document.querySelectorAll(".option")
 
-let resetButton = 
-document.getElementsByClassName("button") ;
-
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
 
 tipButton.forEach((amount) => {
     amount.addEventListener("click", function(){
-        console.log(amount.firstChild.textContent);
+
     })
 })
 
-
-
+function reset(){
+    console.log(billAmount.value);
+}
