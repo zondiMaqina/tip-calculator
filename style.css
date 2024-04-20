@@ -63,3 +63,7 @@ input, button{
 .attribution a { 
     color: hsl(51, 60%, 39%); 
 }
+
+.warning{
+    border: 1px solid red;
+}
