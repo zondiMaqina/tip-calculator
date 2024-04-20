@@ -11,11 +11,13 @@
  <link rel="stylesheet" href="./style.css">
 <body>
   <main class="body">
+
     <section id="left">
       <section class="top">
         <span class="bill">
           Bill
-        </span>  
+        </span>
+        <input type="text">  
       </section>
   
   <section class="middle">
@@ -39,13 +41,36 @@
     </section>
 
     <section id="right">
-      Tip Amount
-      / person
-    
-      Total
-      / person
-    
-      Reset  
+
+      <section class="top-display">
+        <div>
+          <strong>
+            Tip Amount
+          </strong>
+          <p>
+            / person
+          </p>    
+        </div>
+        <h2>
+          0 <span class="tip-balance">0</span>
+        </h2>
+      </section>
+
+      <section class="buttom-display">
+        <div>
+          <strong>
+            Total
+          </strong>
+          / person    
+        </div>
+        <h2>
+          $ <span class="total-balance">0</span>
+        </h2>
+      </section>
+
+      <button class="button">
+        Reset
+      </button>  
     </section>      
   </main>
   <div class="attribution">
