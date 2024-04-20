@@ -23,6 +23,9 @@ document.querySelectorAll(".option")
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
+let section =
+document.getElementsByClassName("last") ;
+
 let total;
 let tip;
 
@@ -31,9 +34,20 @@ tipButton.forEach((amount) => {
 
         percentage  = 
         amount.firstChild.textContent ;
-        console.log(billAmount.value);
-        console.log(amountOfPeople.value)
-    
+
+        console.log(amountOfPeople.value);
+
+        if (amountOfPeople.value <= 0){
+            amountOfPeople.classList.add("warning") ;
+
+            let warn =
+            document.createElement("span") ;
+            warn.textContent = "Cannot be less than 0"
+            section.insertBefore(warn)
+
+        }else{
+            amountOfPeople.classList.toggle("warning")
+        }
     })  
 }) ;
 
