@@ -4,7 +4,7 @@ This Project is for me to practise on my old JS skills
 # Tools to use
 
 1. Javasript DOM Manipulation
-2. CSS Flexbox
+2. CSS Flexbox | Grid
 3. HTML5
 4. VSCode
 
@@ -20,3 +20,5 @@ This Project is for me to practise on my old JS skills
 # Challenges 
 
 I had trouble being able to structure page properly using block elements from HTML.
+
+Knowing how to insert images on input element
