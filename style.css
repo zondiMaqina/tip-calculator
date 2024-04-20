@@ -18,7 +18,7 @@
     background-color: gainsboro;
 }
 
-.option-input::placeholder, .option{
+.option-input::placeholder, .option-input{
     text-align: center;
     color: black;
 }
