@@ -5,10 +5,21 @@
     text-decoration: none;
 }
 
+.body{
+    display: flex;
+}
+
+#left, #right{
+    border: 1px solid;
+    width: 100%;
+}
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
+
 .attribution a { 
     color: hsl(51, 60%, 39%); 
 }
