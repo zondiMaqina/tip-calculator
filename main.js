@@ -43,12 +43,14 @@ tipButton.forEach((amount) => {
         if (amountOfPeople.value > 0 && bill !== NaN && price.value > 0){
             amountOfPeople.classList.remove("warning") ;
             price.classList.remove("warning") ;
-            total = price.value * (Number(percentage) / 100) ;
-            tip = price.value - total;
-            bill = ((total) * Number(amountOfPeople.value)) + (tip * Number(amountOfPeople.value))
+            total = Number(price.value) * (Number(percentage) / 100) ;
+            tip = Number(price.value) * (percentage / 100) ;
+            bill = Number(price.value) * Number(amountOfPeople.value)
 
             billAmount.value = Math.ceil(bill) ;
-            person_balance.textContent = tip ;
+            person_balance.textContent = Math.round(tip + Number(price.value)) ;
+            person_tip.textContent = Math.round(total) ;
+
         }else if (amountOfPeople.value <= 0){
             amountOfPeople.classList.add("warning") ;
             price.classList.add("warning")
@@ -60,8 +62,6 @@ tipButton.forEach((amount) => {
 
 
 function reset(){
-    console.log(person_balance)
-    console.log(person_tip)
     person_balance.textContent = 0.00 ;
     person_tip.textContent = 0.00 ;
 }
