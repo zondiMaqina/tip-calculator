@@ -27,12 +27,23 @@ This Project is for me to practise on my old JS skills
 
 4. How to run function from input text using ```enter``` button on keyboard only
 
+5. Getting user input from input element
 
 # Progress
 
-How to add images on input element
+2. How to add images on input element
+```input-element{ background-image: url(path); background-position: x y; background-size: value;}```
+> This method is more efficient as it lets me set both size and position of icon INSISDE the input element
 
 
-How to run function from input text using ```enter``` button on keyboard only
+4. How to run function from input text using ```enter``` button on keyboard only
+```input.addEventListener("keyup", (e)=>{ if e.keyCode === 13{(e.target.value)}}) ;```
+
+where ```(e)``` is the key from keyboard and the if statement checks for specific key from keyboard using keyCodes
+
+
+5. Getting user input from input element
+I must use the ".value" method and be sure to give the input an id attribute only 
+
 
 
