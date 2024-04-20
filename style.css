@@ -6,13 +6,44 @@
 }
 
 /*POSITIONING*/
-
-#right, #left{
+#left{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
     padding: 25px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;  
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+#right .top{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+#left, .top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#left .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#left .last .amount-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 .top-display, .buttom-display{
@@ -42,10 +73,13 @@
 
 .body{
     display: flex;
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 #left, #right{
-    border: 1px solid;
     width: 100%;
 }
 
@@ -73,6 +107,7 @@
 
 input, button{
     border: none;
+    border-radius: 5px;
 }
 
 button[onclick="reset()"]{
@@ -80,6 +115,7 @@ button[onclick="reset()"]{
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     font-weight: bold;
+    border-radius: 5px
 } ;
 
 /*COLORS AND STYLING*/
@@ -123,4 +159,20 @@ div p{
 
 .warning{
     border: 1px solid red;
+}
+
+@media screen and (max-width: 900px){
+    .body{
+        flex-direction: column;
+    }
+
+    #right, #left{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #left .middle{
+        align-items: center;
+    }
 }
