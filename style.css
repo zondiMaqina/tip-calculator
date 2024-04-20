@@ -5,6 +5,16 @@
     text-decoration: none;
 }
 
+/*POSITIONING*/
+.options{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+}
+
+.option{
+    height: 30px;
+}
+
 .body{
     display: flex;
 }
