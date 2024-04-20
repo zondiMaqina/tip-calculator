@@ -19,7 +19,7 @@
     background-color: gainsboro;
 }
 
-.option::placeholder{
+.option::placeholder, .option{
     text-align: center;
     color: black;
 }
@@ -33,6 +33,11 @@
     width: 100%;
 }
 
+.bill-input{
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 0;
+}
 
 /*COLORS AND STYLING*/
 .attribution { 
