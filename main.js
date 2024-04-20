@@ -23,6 +23,12 @@ document.querySelectorAll(".option")
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
+let person_balance = 
+document.getElementsByClassName("total-balance") ;
+
+let person_tip = 
+document.getElementsByClassName("tip-balance") ;
+
 let calculation;
 let tip;
 let bill;
@@ -33,8 +39,6 @@ tipButton.forEach((amount) => {
         percentage  = 
         amount.firstChild.textContent ;
 
-        console.log(amountOfPeople.value);
-
         if (amountOfPeople.value > 0){
             amountOfPeople.classList.remove("warning") ;
             
@@ -43,8 +47,6 @@ tipButton.forEach((amount) => {
             bill = ((total) * Number(amountOfPeople.value)) + (tip * Number(amountOfPeople.value))
 
             billAmount.value = Math.ceil(bill) ;
-
-            
         }else if (amountOfPeople.value <= 0){
             amountOfPeople.classList.add("warning") ;
         }
@@ -52,6 +54,7 @@ tipButton.forEach((amount) => {
         
     })  
 }) ;
+
 
 
 function reset(){
