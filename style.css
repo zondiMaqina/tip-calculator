@@ -32,7 +32,7 @@
     width: 100%;
 }
 
-#bill-input{
+#bill-input, #price{
     background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 5px;
@@ -44,7 +44,7 @@
     background-position: 5px; 
 }
 
-#bill-input, #people{
+#bill-input, #people, #price{
     padding: 2px 8px 2px 0;
     height: 30px;
     text-align: end;
