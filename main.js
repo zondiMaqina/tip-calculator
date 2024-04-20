@@ -29,7 +29,6 @@ document.getElementsByClassName("total-balance") ;
 let person_tip = 
 document.getElementsByClassName("tip-balance") ;
 
-let calculation;
 let tip;
 let bill;
 
@@ -58,6 +57,8 @@ tipButton.forEach((amount) => {
 
 
 function reset(){
+    person_balance.innerText = 0.00 ;
+    person_tip.innerText = 0.00 ;
 }
 
 
