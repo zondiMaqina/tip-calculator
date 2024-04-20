@@ -12,10 +12,10 @@ user must see amount total amount with bill for each person after pressing tip a
 /* TARGET NODES */
 
 let billAmount = 
-document.getElementsByClassName("bill-input") ;
+document.getElementById("bill-input") ;
 
 let amountOfPeople =
-document.getElementsByClassName("people") ;
+document.getElementById("people") ;
 
 let tipButton = 
 document.querySelectorAll(".option")
@@ -23,13 +23,22 @@ document.querySelectorAll(".option")
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
+let billInput ;
+let peopleInput ;
+let percentage ;
+
 
 tipButton.forEach((amount) => {
     amount.addEventListener("click", function(){
 
-    })
-})
+        percentage  = 
+        amount.firstChild.textContent ;
+    })  
+}) ;
+
 
 function reset(){
     console.log(billAmount.value);
 }
+
+

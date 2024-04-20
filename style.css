@@ -12,13 +12,13 @@
     gap: 8px;
 }
 
-.option{
+.option, .option-input{
     height: 30px;
     border-radius: 5px;
     background-color: gainsboro;
 }
 
-.option::placeholder, .option{
+.option-input::placeholder, .option{
     text-align: center;
     color: black;
 }
@@ -32,26 +32,28 @@
     width: 100%;
 }
 
-.bill-input{
+#bill-input{
     background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 5px;
 }
 
-.people{
+#people{
     background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 5px; 
 }
 
-.bill-input, .people{
-    padding: 2px;
+#bill-input, #people{
+    padding: 2px 8px 2px 0;
     height: 30px;
+    text-align: end;
 }
 
 input, button{
     border: none;
 }
+
 /*COLORS AND STYLING*/
 .attribution { 
     font-size: 11px; 
