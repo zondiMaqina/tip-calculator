@@ -9,10 +9,19 @@
 .options{
     display: grid;
     grid-template-columns: 70px 70px 70px;
+    gap: 8px;
 }
 
 .option{
     height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+
+.option::placeholder{
+    text-align: center;
+    color: black;
 }
 
 .body{
@@ -25,6 +34,7 @@
 }
 
 
+/*COLORS AND STYLING*/
 .attribution { 
     font-size: 11px; 
     text-align: center; 
