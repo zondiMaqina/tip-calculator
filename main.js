@@ -10,6 +10,8 @@ user must see amount total amount with bill for each person after pressing tip a
 */
 
 /* TARGET NODES */
+let price = 
+document.getElementById("price") ;
 
 let billAmount = 
 document.getElementById("bill-input") ;
@@ -38,11 +40,11 @@ tipButton.forEach((amount) => {
         percentage  = 
         amount.firstChild.textContent ;
 
-        if (amountOfPeople.value > 0){
+        if (amountOfPeople.value > 0 || bill !== NaN){
             amountOfPeople.classList.remove("warning") ;
             
-            total = 28.51 * (Number(percentage) / 100) ;
-            tip = 28.51 - total;
+            total = price.value * (Number(percentage) / 100) ;
+            tip = price.value - total;
             bill = ((total) * Number(amountOfPeople.value)) + (tip * Number(amountOfPeople.value))
 
             billAmount.value = Math.ceil(bill) ;
@@ -54,7 +56,12 @@ tipButton.forEach((amount) => {
     })  
 }) ;
 
+customAmount.addEventListener("keyup", (e)=>{
 
+    if (e.keyCode == 13){
+
+    }
+})
 
 function reset(){
     person_balance.innerText = 0.00 ;
