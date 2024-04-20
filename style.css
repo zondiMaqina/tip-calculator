@@ -14,7 +14,6 @@
 
 .option{
     height: 30px;
-    border: none;
     border-radius: 5px;
     background-color: gainsboro;
 }
@@ -36,9 +35,23 @@
 .bill-input{
     background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
-    background-position: 5px 0;
+    background-position: 5px;
 }
 
+.people{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5px; 
+}
+
+.bill-input, .people{
+    padding: 2px;
+    height: 30px;
+}
+
+input, button{
+    border: none;
+}
 /*COLORS AND STYLING*/
 .attribution { 
     font-size: 11px; 
