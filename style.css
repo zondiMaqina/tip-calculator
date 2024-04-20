@@ -12,15 +12,17 @@
     gap: 8px;
 }
 
-.option, .option-input{
+.option{
     height: 30px;
     border-radius: 5px;
-    background-color: gainsboro;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
 }
 
 .option-input::placeholder, .option-input{
     text-align: center;
     color: black;
+    background-color: hsl(189, 41%, 97%);
 }
 
 .body{
@@ -36,18 +38,22 @@
     background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 5px;
+    background-color: hsl(189, 41%, 97%);
+
 }
 
 #people{
     background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 5px; 
+    background-color: hsl(189, 41%, 97%);
 }
 
 #bill-input, #people, #price{
     padding: 2px 8px 2px 0;
     height: 30px;
     text-align: end;
+    background-color: hsl(189, 41%, 97%);
 }
 
 input, button{
@@ -55,6 +61,35 @@ input, button{
 }
 
 /*COLORS AND STYLING*/
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+}
+
+#right{
+    background-color: hsl(183, 100%, 15%);
+}
+
+#total-balance, #tip-balance, h2{
+    color: hsl(172, 67%, 45%);
+}
+
+strong{
+    color: white;
+}
+
+div p{
+    color: rgba(255, 255, 255, 0.404);
+}
+
+.option:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
