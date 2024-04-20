@@ -23,14 +23,9 @@ document.querySelectorAll(".option")
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
-let section =
-document.getElementsByClassName("last") ;
-
-let span = 
-document.getElementsByClassName("amount")
-
-let total;
+let calculation;
 let tip;
+let bill;
 
 tipButton.forEach((amount) => {
     amount.addEventListener("click", function(){
@@ -40,12 +35,21 @@ tipButton.forEach((amount) => {
 
         console.log(amountOfPeople.value);
 
-        if (amountOfPeople.value <= 0){
-            amountOfPeople.classList.add("warning") ;
+        if (amountOfPeople.value > 0){
+            amountOfPeople.classList.remove("warning") ;
+            
+            total = 28.51 * (Number(percentage) / 100) ;
+            tip = 28.51 - total;
+            bill = ((total) * Number(amountOfPeople.value)) + (tip * Number(amountOfPeople.value))
 
-        }else{
-            amountOfPeople.classList.toggle("warning") ;
+            billAmount.value = Math.ceil(bill) ;
+
+            
+        }else if (amountOfPeople.value <= 0){
+            amountOfPeople.classList.add("warning") ;
         }
+
+        
     })  
 }) ;
 
