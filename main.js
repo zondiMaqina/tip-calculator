@@ -23,22 +23,22 @@ document.querySelectorAll(".option")
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
-let billInput ;
-let peopleInput ;
-let percentage ;
-
+let total;
+let tip;
 
 tipButton.forEach((amount) => {
     amount.addEventListener("click", function(){
 
         percentage  = 
         amount.firstChild.textContent ;
+        console.log(billAmount.value);
+        console.log(amountOfPeople.value)
+    
     })  
 }) ;
 
 
 function reset(){
-    console.log(billAmount.value);
 }
 
 
