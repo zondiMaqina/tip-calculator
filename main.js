@@ -26,6 +26,9 @@ document.getElementsByClassName("option-input") ;
 let section =
 document.getElementsByClassName("last") ;
 
+let span = 
+document.getElementsByClassName("amount")
+
 let total;
 let tip;
 
@@ -40,13 +43,8 @@ tipButton.forEach((amount) => {
         if (amountOfPeople.value <= 0){
             amountOfPeople.classList.add("warning") ;
 
-            let warn =
-            document.createElement("span") ;
-            warn.textContent = "Cannot be less than 0"
-            section.insertBefore(warn)
-
         }else{
-            amountOfPeople.classList.toggle("warning")
+            amountOfPeople.classList.toggle("warning") ;
         }
     })  
 }) ;
