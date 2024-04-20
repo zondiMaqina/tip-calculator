@@ -17,19 +17,19 @@ document.getElementsByClassName("bill-input") ;
 let amountOfPeople =
 document.getElementsByClassName("people") ;
 
-let tipAmount = 
-document.querySelectorAll(".digit") ;
+let tipButton = 
+document.querySelectorAll(".option")
 
-const resetButton = 
+let resetButton = 
 document.getElementsByClassName("button") ;
 
 let customAmount = 
 document.getElementsByClassName("option-input") ;
 
 
-tipAmount.forEach((amount) => {
+tipButton.forEach((amount) => {
     amount.addEventListener("click", function(){
-        console.log(amount.textContent)
+        console.log(amount.firstChild.textContent);
     })
 })
 
