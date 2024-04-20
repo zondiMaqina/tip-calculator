@@ -31,8 +31,8 @@ This Project is for me to practise on my old JS skills
 # Progress
 
 How to add images on input element
-``````
+
 
 How to run function from input text using ```enter``` button on keyboard only
-``````
+
 
