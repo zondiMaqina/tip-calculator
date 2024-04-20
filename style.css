@@ -6,6 +6,21 @@
 }
 
 /*POSITIONING*/
+
+#right, #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 25px;
+}
+
+.top-display, .buttom-display{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .options{
     display: grid;
     grid-template-columns: 70px 70px 70px;
@@ -59,6 +74,13 @@
 input, button{
     border: none;
 }
+
+button[onclick="reset()"]{
+    height: 25px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    font-weight: bold;
+} ;
 
 /*COLORS AND STYLING*/
 
