@@ -108,6 +108,13 @@
 input, button{
     border: none;
     border-radius: 5px;
+    font-family: sans-serif;
+}
+
+input{
+    font-size: 18px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
 }
 
 button[onclick="reset()"]{
