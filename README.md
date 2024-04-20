@@ -14,11 +14,25 @@ This Project is for me to practise on my old JS skills
 
 2. >To help me rememeber CSS Flexbox and styling concepts
 
-3. >Help myself remember HTML langauage :)
+3. >Help myself remember HTML langauage 
 
 
 # Challenges 
 
-I had trouble being able to structure page properly using block elements from HTML.
+1. I had trouble being able to structure page properly using block elements from HTML.
 
-Knowing how to insert images on input element
+2. Knowing how to insert images on input element.
+
+3. How to add images on input element
+
+4. How to run function from input text using ```enter``` button on keyboard only
+
+
+# Progress
+
+How to add images on input element
+``````
+
+How to run function from input text using ```enter``` button on keyboard only
+``````
+
