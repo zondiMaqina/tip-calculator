@@ -11,16 +11,20 @@ user must see amount total amount with bill for each person after pressing tip a
 
 /* TARGET NODES */
 
-let billAmount = 
+const billAmount = 
 document.getElementsByClassName("bill-input") ;
 
-let amountOfPeople =
-document.getElementsByClassName("people")
+const amountOfPeople =
+document.getElementsByClassName("people") ;
 
-let tipAmount = 
+const tipAmount = 
 document.querySelectorAll(".digit") ;
 
-let resetButton = document.getElementsByClassName("button") ;
+const resetButton = document.getElementsByClassName("button") ;
+
+const customAmount = 
+document.getElementsByClassName("option-input") ;
+
 
 
 
