@@ -26,10 +26,10 @@ let customAmount =
 document.getElementsByClassName("option-input") ;
 
 let person_balance = 
-document.getElementsByClassName("total-balance") ;
+document.getElementById("total-balance") ;
 
 let person_tip = 
-document.getElementsByClassName("tip-balance") ;
+document.getElementById("tip-balance") ;
 
 let tip;
 let bill;
@@ -40,32 +40,30 @@ tipButton.forEach((amount) => {
         percentage  = 
         amount.firstChild.textContent ;
 
-        if (amountOfPeople.value > 0 || bill !== NaN){
+        if (amountOfPeople.value > 0 && bill !== NaN && price.value > 0){
             amountOfPeople.classList.remove("warning") ;
-            
+            price.classList.remove("warning") ;
             total = price.value * (Number(percentage) / 100) ;
             tip = price.value - total;
             bill = ((total) * Number(amountOfPeople.value)) + (tip * Number(amountOfPeople.value))
 
             billAmount.value = Math.ceil(bill) ;
+            person_balance.textContent = tip ;
         }else if (amountOfPeople.value <= 0){
             amountOfPeople.classList.add("warning") ;
+            price.classList.add("warning")
         }
 
         
     })  
 }) ;
 
-customAmount.addEventListener("keyup", (e)=>{
-
-    if (e.keyCode == 13){
-
-    }
-})
 
 function reset(){
-    person_balance.innerText = 0.00 ;
-    person_tip.innerText = 0.00 ;
+    console.log(person_balance)
+    console.log(person_tip)
+    person_balance.textContent = 0.00 ;
+    person_tip.textContent = 0.00 ;
 }
 
 
