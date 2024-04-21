@@ -103,6 +103,7 @@
     height: 30px;
     text-align: end;
     background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
 }
 
 input, button{
@@ -114,7 +115,6 @@ input, button{
 input{
     font-size: 18px;
     color: hsl(183, 100%, 15%);
-    font-weight: 700;
 }
 
 button[onclick="reset()"]{
