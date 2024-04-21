@@ -118,6 +118,11 @@ input{
     color: hsl(183, 100%, 15%);
 }
 
+#option-input{
+    text-align: center;
+    font-weight: 100;
+}
+
 button[onclick="reset()"]{
     height: 25px;
     color: hsl(183, 100%, 15%);
