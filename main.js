@@ -23,7 +23,7 @@ let tipButton =
 document.querySelectorAll(".option")
 
 let customAmount = 
-document.getElementsByClassName("option-input") ;
+document.getElementsById("option-input") ;
 
 let person_balance = 
 document.getElementById("total-balance") ;
@@ -61,6 +61,11 @@ tipButton.forEach((amount) => {
     })  
 }) ;
 
+
+
+document.addEventListener("keydown", (key) =>{
+    console.log(key);
+})
 
 function reset(){
     person_balance.textContent = 0.00 ;
