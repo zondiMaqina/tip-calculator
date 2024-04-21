@@ -63,8 +63,10 @@ tipButton.forEach((amount) => {
 
 
 
-document.addEventListener("keydown", (key) =>{
-    console.log(key);
+customAmount.addEventListener("keydown", (key) =>{
+    if (key.keyCode === 13){
+        
+    }
 })
 
 function reset(){
