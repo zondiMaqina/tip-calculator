@@ -51,9 +51,10 @@ tipButton.forEach((amount) => {
             person_balance.textContent = Math.round(tip + Number(price.value)) ;
             person_tip.textContent = Math.round(total) ;
 
-        }else if (amountOfPeople.value <= 0){
+        }else{
             amountOfPeople.classList.add("warning") ;
-            price.classList.add("warning")
+            price.classList.add("warning") ;
+            billAmount.value = "?" ;
         }
 
         
