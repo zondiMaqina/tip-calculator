@@ -65,7 +65,15 @@ tipButton.forEach((amount) => {
 
 customAmount.addEventListener("keydown", (key) =>{
     if (key.keyCode === 13){
-        
+        amountOfPeople.classList.remove("warning") ;
+        price.classList.remove("warning") ;
+        total = Number(price.value) * (Number(customAmount.value) / 100) ;
+        tip = Number(price.value) * (Number(customAmount.value) / 100) ;
+        bill = Number(price.value) * Number(amountOfPeople.value)
+
+        billAmount.value = Math.ceil(bill) ;
+        person_balance.textContent = Math.round(tip + Number(price.value)) ;
+        person_tip.textContent = Math.round(total) ;
     }
 })
 
