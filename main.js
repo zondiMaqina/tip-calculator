@@ -23,7 +23,7 @@ let tipButton =
 document.querySelectorAll(".option")
 
 let customAmount = 
-document.getElementsById("option-input") ;
+document.getElementById("option-input") ;
 
 let person_balance = 
 document.getElementById("total-balance") ;
