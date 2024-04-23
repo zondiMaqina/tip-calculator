@@ -6,6 +6,16 @@
 }
 
 /*POSITIONING*/
+body{
+    background-color: hsl(173, 22%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+
 #left{
     display: flex;
     flex-direction: column;
@@ -74,10 +84,10 @@
 .body{
     display: flex;
     padding: 25px;
+    margin: 0 25%;
     max-width: 700px;
-    margin: 10px auto;
-    margin-top: 50px;
-    box-shadow: 0 0 20px hsl(183, 100%, 15%);
+    box-shadow: 0 0 20px hsl(182, 20%, 66%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 #left, #right{
@@ -132,10 +142,6 @@ button[onclick="reset()"]{
 } ;
 
 /*COLORS AND STYLING*/
-
-body{
-    background-color: hsl(185, 41%, 84%);
-}
 
 main{
     background-color: hsl(0, 0%, 100%);
